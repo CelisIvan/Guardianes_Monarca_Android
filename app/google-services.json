@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "685081259384",
+    "firebase_url": "https://guardianesmonarca.firebaseio.com",
+    "project_id": "guardianesmonarca",
+    "storage_bucket": "guardianesmonarca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685081259384:android:fb9d94e8426411ceda2c8d",
+        "android_client_info": {
+          "package_name": "com.example.guardianesmonarca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685081259384-mr1itov8c4lfvahrqdah3ttbn0tqnpg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guardianesmonarca",
+            "certificate_hash": "2aa8dd68d079c9013de52836ae37b99eb5922a95"
+          }
+        },
+        {
+          "client_id": "685081259384-q8t675rs0e2red4abm2pq0hs12cv6nc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZMpEFVM9WYW6VCCBBwtUgWY1hmKO3kVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685081259384-q8t675rs0e2red4abm2pq0hs12cv6nc7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "685081259384-j6ekou51mfcombe54685kelslmo40ncq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monarchy.Guardianes-Monarca"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

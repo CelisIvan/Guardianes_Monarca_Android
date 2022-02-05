@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondobw"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="110dp"
+                android:baselineAligned="true"
+
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logoblancov2" />
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Actualizar datos"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+        <EditText
+                android:id="@+id/newnames"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+                android:id="@+id/newlastnames"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newnames" />
+
+        <EditText
+                android:id="@+id/newemail"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newlastnames" />
+
+
+        <Button
+                android:id="@+id/register_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Actualizar"
+                android:textColor="#FFFBFB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newemail" />
+
+        <Button
+                android:id="@+id/other_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="4dp"
+                android:text="Otros Ajustes"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

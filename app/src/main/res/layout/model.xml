@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/orange_gradient_bckgnd">
+
+        <TextView
+                android:id="@+id/tittle_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_heavy"
+                android:text="Titulo"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                />
+
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tittle_event"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="Fecha"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        <TextView
+                android:id="@+id/place_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="Lugar"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/place_event"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_medium"
+                android:text="Descripcion"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenirltstd_mediumoblique"
+                android:text="Link"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

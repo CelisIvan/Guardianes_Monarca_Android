@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Guardianes Monarca</string>
+    <string name="title_activity_access">Access</string>
+    <string name="guardianes_n_monarca">GUARDIANES \nMONARCA</string>
+    <string name="empty_mail">El campo de correo electrónico</string>
+    <string name="empty_password">El campo de contraseña está vacío</string>
+    <string name="empty_nombre">El campo de nombre está vacío</string>
+    <string name="empty_apellidos">El campo de los apellidos está vacío</string>
+    <string name="empty_confirmpass">El campo de confirmación de contraseña está vacío</string>
+    <string name="successful_register">USTED SE HA REGISTRADO CORRECTAMENTE :D</string>
+    <string name="recovery_pass">Introduce por favor tu dirección de correo electrónico para
+    enviar un mail de verificación y así poder restablecer tu contraseña</string>
+    <string name="avistamiento">Con tu ayuda podemos localizar mejor a la mariposa y mapear su ruta para cuidarla mejor</string>
+
+</resources>

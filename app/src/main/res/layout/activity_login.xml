@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bckgndnew"
+        tools:context=".LoginActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="110dp"
+                android:baselineAligned="true"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logoblancov2" />
+
+        <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Iniciar Sesión"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintStart_toStartOf="@+id/email" />
+
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="400dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableRight="@drawable/ic_action_correoclaro"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableRight="@drawable/ic_action_passwordclaro"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <Button
+                android:id="@+id/login_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:background="#EC3700"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text=" Iniciar Sesión "
+                app:layout_constraintEnd_toEndOf="@+id/password"
+                app:layout_constraintStart_toStartOf="@+id/password"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <Button
+                android:id="@+id/facebook_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:background="#324FBD"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Continuar con Facebook"
+                android:textColor="#EEE8E8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+
+        <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_btn"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.539"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facebook_button" />
+
+        <Button
+                android:id="@+id/forgotpassbutton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FCF8F8"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Olvidé mi contraseña"
+                android:textColor="#F5F2F2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/google_btn" />
+
+        <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="150dp"
+                android:text="¿Aún no tienes cuenta?"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forgotpassbutton" />
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/register_buttonl"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                app:cardBackgroundColor="#1E88E5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/registration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/avenirltstd_black"
+                        android:text="REGISTRARSE"
+                        android:textColor="#fff" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

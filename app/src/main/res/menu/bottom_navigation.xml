@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/calendar"
+        android:title="Eventos"/>
+    <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/location"
+            android:title="Avistamiento"/>
+    <item
+            android:id="@+id/nav_user_account"
+            android:icon="@drawable/user_account"
+            android:title="Tu Cuenta"/>
+    <item
+            android:id="@+id/nav_seeds"
+            android:icon="@drawable/flower"
+            android:title="Semillas"/>
+    <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Ajustes"/>
+
+
+</menu>

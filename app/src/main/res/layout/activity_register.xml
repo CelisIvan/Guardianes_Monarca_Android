@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bckgndnew"
+        tools:context=".RegisterActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/back_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="38dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Atrás"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="110dp"
+                android:baselineAligned="true"
+                android:verticalScrollbarPosition="defaultPosition"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back_btn"
+                app:srcCompat="@drawable/logoblancov2" />
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Crear una cuenta"
+                android:textColor="#F7F1F1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/names"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+        <EditText
+                android:id="@+id/names"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Nombres"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+                android:id="@+id/lastnames"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/names" />
+
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastnames" />
+
+        <EditText
+                android:id="@+id/pwd_register"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <EditText
+                android:id="@+id/pwdconfirm_register"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginEnd="110dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#80FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pass-spec" />
+
+
+        <Button
+                android:id="@+id/register_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Registrarme"
+                android:textColor="#FFFBFB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <TextView
+                android:id="@+id/pass-spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirltstd_bookoblique"
+                android:text="(Debe de contener al menos 8 caracteres)"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/pwd_register"
+                app:layout_constraintTop_toBottomOf="@+id/pwd_register" />
+
+        <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="Soy mayor de edad o tengo el \nconsentimiento de mis padres"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/pwdconfirm_register"
+                app:layout_constraintTop_toBottomOf="@+id/pwdconfirm_register" />
+
+        <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/avenirltstd_heavyoblique"
+                android:text="He leído y acepto todos los términos y \ncondiciones"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/checkBox"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
